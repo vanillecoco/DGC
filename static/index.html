@@ -27,14 +27,16 @@
 
         }
         
-        /* nav li{
+        nav>ul>li{
+            display: flex;
+            justify-content: space-around;
             float:left;
             width:25%;
             background-color: dodgerblue;
             text-decoration: none;
             text-align: center;
         }
-        nav ul{
+        nav>ul{
             clear:both;
             list-style: none;
            
@@ -50,10 +52,41 @@
           text-align: center;
       }
 
+      .header{
+    color: rgb(119, 88, 88);
+    background: black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-variant: small-caps;
+}
+
+
+
+.parent {
+    height: 100vh;
+    width: 100vw;
+    background: beige;
+    color: green;
+    font-size: large;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    position: relative;
+}
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+}
+
     </style>
 </head>
 <body>
-    <div id="container">
+    <!-- <div id="container">
     <header>
          <h1> HTML </h1>
     
@@ -62,11 +95,11 @@
                 <li>Home</li>
                 <li>About</li>
                 <li>Products</li>
-                   <ol>
+                    <ol>
                        <li>cosmetic</li>
                        <li>snack</li>
                        <li>drink</li>
-                   </ol>
+                   </ol> 
                 <li>Contact</li>
             </ul>
          </nav>
@@ -80,7 +113,10 @@
           <p class="class_p">LALALA</p>
     </article>
     </content>   
-    <!-- <footer>hs , jang 2021 </footer> -->
-</div>
+     <footer>hs , jang 2021 </footer> 
+</div>  -->
+<div class="parent">
+    <div class="child">"At vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
+</div>  
 </body>
 </html>
