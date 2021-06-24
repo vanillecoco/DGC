@@ -87,11 +87,11 @@
 }
 
 .child_div{
-    width:33.3333%;
+    width:33%;
     float:left;
-    height: 400px;
-    line-height: 400px;
+    height: 200px;
     text-align: center;
+    overflow: auto;
 }
 
     </style>
@@ -127,9 +127,31 @@
      <footer>hs , jang 2021 </footer> 
 </div>  -->
 <div class="parent">
+    <div class="child_div">"At vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
     <div class="child_div">"At vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
-    <div class="child_div">"At vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
-    <div class="child_div">"At vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
-</div>  
+    <div class="child_div">"At vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium voAt vero eos et accusamus et iust qui blanditiis praesentium vo"</div>
+</div> 
+
+<div id="card_div">
+    <div class="cards">Strength</div>
+    <div class="cards">Personality</div>
+    <div class="cards">Hobby</div>
+</div>
 </body>
+<script>
+    let hh = document.getElementsByClassName("cards")[0].innerHTML; 
+    console.log(hh);
+</script>
+<style>
+    #card_div{
+        width:flex;
+    }
+    .cards{
+        border: 1px solid black;
+        width:30%;
+        float:left;
+        margin:1%;
+        border-radius: 1px;
+    }
+</style>
 </html>
