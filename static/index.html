@@ -97,6 +97,7 @@
     </style>
 </head>
 <body>
+    <script type="module" src="app.js"></script>
     <!-- <div id="container">
     <header>
          <h1> HTML </h1>
@@ -137,10 +138,46 @@
     <div class="cards">Personality</div>
     <div class="cards">Hobby</div>
 </div>
+<button onclick="dd()">click</button>
 </body>
 <script>
+
+    for(let i =0; i<5; i++){
+        document.write(i+"<br>"); //1,2,3,4
+    }
+    //document.write("<hr>"+i) //undefined
+
+    var sum = (a,b) => a+b;
+    document.write(sum(2,6)); 
+
+
     let hh = document.getElementsByClassName("cards")[0].innerHTML; 
     console.log(hh);
+
+
+   
+ 
+    //hh.addEventListener("click",function(){
+      //  alert("dd");
+    //})
+
+    class Car{
+        constructior(color, type, doors){
+            this.color = color;
+            this.type = type;
+            this.doors = doors;
+        }
+
+    }
+    const myCar = new Car("black","bmw",4);
+
+
+    
+    function dd(){
+       alert(hh);
+    }
+    
+    
 </script>
 <style>
     #card_div{
