@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        background-color: #64a1a3;
+    }
+    div#content{
+        width:100%;
+        position: absolute;
+        text-align: center;
+    }
+    #content #f_p{
+        position: relative;
+        top:260px;
+        color:white;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    #content #btn1{
+        position: relative;
+        padding: 10px 15px;
+        top:280px;
+        border: 1px solid white;
+        color:white;
+    }
+    #content #btn1:hover{
+       background-color: blueviolet;
+    }
+    #content #hidden_msg{
+        width:50%;
+        position: relative;
+        top:300px;
+        left:25%;
+        background-color: white;
+        padding: 10px 5px;
+        border-radius: 5px;
+        
+        
+    }
+
+</style>
+
+<body>
+    <div id="content">
+        <p id="f_p">Show me your front end skills</p>
+        <button id="btn1">Hide the Secret</button>
+        <div id="hidden_msg">You can't see this all the time</div>
+    </div>
+    
+</body>
+<script>
+    var toggle_div = document.getElementById('hidden_msg');
+    
+    $(document).ready(function(){
+        toggle_div.style.display = 'none';
+        $('#btn1').click(function(){
+        if (toggle_div.style.display !== 'none') {
+            toggle_div.style.display = 'none';
+        }
+        else {
+            toggle_div.style.display = 'block';
+        }  
+        })
+    })
+</script>
+
+
+</html>
