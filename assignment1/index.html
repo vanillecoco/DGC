@@ -5,149 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment1</title>
+    <link rel="stylesheet" href="css/main.css" />
 </head>
-<style>
-    *{
-        margin: 0 auto;
-        padding: 0;
-        color: white;
-    }
-    header{
-        background-color: #4237c9;
-    }
-
-    ul{
-        list-style: none;
-    }
-    ul li{
-        text-align: center;
-    }
-    div#content{
-        background-color: #4e45e4;
-    }
-
-    #div_l{
-        background-color: #4237c9;
-        width:50%;
-        float: left;
-    }
-    #div_l ul li{
-        width:12%;
-        float:left; 
-        height: 48px;
-        line-height: 48px;
-    }
-    #div_l ul li:first-child img{
-        width: 100%;
-        height: 40px;
-    }
-    #div_r{
-        background-color: #4237c9;
-        width:50%;
-        float:right;
-    }
-    #div_r ul li{
-        width:15%;
-        float:right; 
-        height: 46px;
-        line-height: 46px;
-    }
-    #sign_btn{
-        color:black;
-        background-color: #fabe23;
-        height: 40px;
-        padding: 1px 10px;
-        margin-right:10px;
-        border-radius: 10px;
-    }
-   
-    #main_div{
-        clear: both;
-        background-color: #4e45e4;
-    }
-    #maint_div_l{
-        width: 50%;
-        float: left;
-        background-color: #4e45e4;
-        height: 504px;
-    }
-    #maint_div_l h1{
-       width:100%;
-       margin-top:80px;
-       text-align: center;
-       height: 100px;
-       line-height: 100px;
-    }
-    #maint_div_l p, #span_l{
-        margin-left: 80px;
-    }
-    #span_l{
-        padding:5px 10px;
-    }
-    #span_r{
-        margin-left:20px;
-    }
-    #span_l:hover{
-        padding:10px 15px;
-        background-color: grey;
-        border-radius: 2px;
-    }
-    #span_r:hover{
-        padding:10px 15px;
-        background-color: grey;
-        border-radius: 2px;
-    }
-
-    #maint_div_r{
-        width: 50%;
-        float: left;
-        background-color: #4e45e4;
-    }
-    #maint_div_r img{
-        width:80%;
-        height: 300px;
-        margin:100px 20px;
-    
-    }
-    #gallery{
-        background-color: #4e45e4;
-    }
-    #gallery .gallery_div{
-       width:23%;
-       float: left; 
-       padding:1%;
-    }
-    #gallery .gallery_div img{
-        width: 100%;
-    }
-    #gallery .gallery_div p{
-        text-align: center;
-        background-color: #4e45e4;
-    }
-    .gallery_div:nth-child(2n){
-        margin-top: 3%;
-    }
-
-    footer{
-        clear: both;
-        height: 170px;
-        background-color: #4237c9;
-    }
-    footer div:first-child{
-        width:50%;
-        float:left;
-    }
-    footer div:last-child{
-        width:50%;
-        float:left;
-    }
-    footer form .form_div{
-        margin-top:10px;
-    }
-
-</style>
-
 <body>
+   
     <div id="content">
         <header>
             <nav>
@@ -202,17 +63,19 @@
         </div>
         <br><br>
         <footer>
-            <div>
+            <div id="footer_form_div">
                 <!-- <span>Join the Newsletter</span> -->
                 <form action="GET">
                     <div class="form_div">
-                      <h2>Join the Newsletter</h2>
+                      <h3>Join the Newsletter</h3>
                     </div>
-                    <div class="form_div" style="background-color:white">
+                    <br><br>
+                    <div class="form_div">
                       <input type="text" placeholder="Email address" name="mail" required id="input_email">
+                      <input type="submit" value="Join" id="input_submit">
                     </div>
                     <div class="form_div">
-                      <input type="submit" value="Join" id="input_submit">
+                      
                     </div>
                   </form>
                 
@@ -227,5 +90,6 @@
     document.getElementById("span_l").addEventListener("click",  function(){ alert("Hello!"); });
     document.getElementById("span_r").addEventListener("click",  function(){ alert("World!"); });
 </script>
+
 
 </html>
