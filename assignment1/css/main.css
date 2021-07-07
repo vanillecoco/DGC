@@ -106,6 +106,12 @@ div#content{
         margin:100px 20px;
 
     }
+
+
+
+
+
+
     #gallery{
         background-color: #4e45e4;
     }
@@ -169,7 +175,7 @@ div#content{
 { 
     #div_l{
         background-color: #4237c9;
-        width:100;
+        width:100%;
         float: left;
     }
     #div_l ul li{
@@ -195,7 +201,7 @@ div#content{
         line-height: 46px;
         visibility: hidden;
     }
-    }
+    
     #sign_btn{
         color:black;
         background-color: #fabe23;
@@ -204,5 +210,112 @@ div#content{
         margin-right:10px;
         border-radius: 10px;
     }
-   
+    
+    #main_div{
+        clear: both;
+        background-color: #4e45e4;
+    }
+    #maint_div_l{
+        width: 100%;
+        float: left;
+        background-color: #4e45e4;
+        height: 300px;
+    }
+    #maint_div_l h1{
+    width:100%;
+    margin-top:80px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    }
+    #maint_div_l p, #span_l{
+        margin-left: 20px;
+    }
+    #span_l{
+        padding:5px 10px;
+    }
+    #span_r{
+        margin-left:20px;
+    }
+    #span_l:hover{
+        padding:10px 15px;
+        background-color: grey;
+        border-radius: 2px;
+    }
+    #span_r:hover{
+        padding:10px 15px;
+        background-color: grey;
+        border-radius: 2px;
+    }
+
+    #maint_div_r{
+        width: 100%;
+        /* float: left; */
+        background-color: #4e45e4;
+    }
+    #maint_div_r img{
+        border-radius: 30px;
+        width:90%;
+        height: 300px;
+        padding:20px;
+
+    }
+    #gallery{
+        background-color: #4e45e4;
+    }
+    #gallery .gallery_div{
+    /* width:23%;
+    float: left; 
+    padding:1%; */
+    }
+    #gallery .gallery_div img{
+        width:80%;
+        margin: 30px;
+        border: 2px solid skyblue;
+        border-radius: 10px;
+    }
+    #gallery .gallery_div p{
+        text-align: center;
+        background-color: #4e45e4;
+    }
+    /* .gallery_div:nth-child(2n){
+        margin-top: 3%;
+    } */
+    footer{
+        clear: both;
+        height: 170px;
+        background-color: #4237c9;
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    footer div:first-child{
+        width:50%;
+        float:left;
+    }
+    footer div:last-child{
+        width:50%;
+        float:left;
+    }
+    footer div:last-child span{
+    height: 150px;
+    line-height: 150px;
+    }
+    footer form .form_div{
+        margin-top:10px;
+        background-color: #4237c9;
+    }
+    .form_div #input_email{
+        width:60%;
+        height: 30px;
+        border: none;
+
+    }
+    #input_submit{
+        color: black;
+        background-color: #fabe23;
+        border: none;
+        width: 15%;
+        height: 30px;
+    }
 }
